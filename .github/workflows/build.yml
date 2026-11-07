@@ -1,4 +1,8 @@
-name: Build APK
+- name: Remove old phoenix files
+  run: |
+    find . -name "intro_phoenix.mp4" -delete
+    find . -name "FireSnake.kt" -delete
+    find . -name "Phoenix.kt" -deletename: Build APK
 on:
   push:
     branches: [ main, master ]
